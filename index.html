@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark mode / light mode</title>
+    <title>Dark mode / light mode - Charlie Rosser Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,37 +15,46 @@
 
 <body>
     <input id="dark" type="checkbox">
-
+    <!-- Header qismi -->
     <header>
-        <div class="container">
-            <h1>CharlieRosser</h1>
-            <nav>
+        <div class="container header-container">
+            <a href="#" class="logo">CharlieRosser</a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
                 </ul>
             </nav>
-            <div class="toggle">
-                <label for="dark"></label>
+
+            <div class="header-actions">
+                <div class="toggle">
+                    <label for="dark"></label>
+                </div>
+                <label for="menu-toggle" class="burger-btn" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
             </div>
         </div>
     </header>
+
+    <!-- Asosiy qism -->
     <main>
         <section class="sec-one">
             <div class="content">
                 <div class="left">
                     <h1>Hi, I'm Charlie Rosser - UI/UX Designer</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac vulputate nibh. Aliquam a ante et
-                        leo
-                        accumsan suscipit in eu magna. Ut aliquam aliquet elit sit amet pretium. Vestibulum sit amet
-                        ante
-                        elementum, vehicula erat nec, dapibus odio. Suspendisse ultricies justo at congue aliquet.
-                        Aenean
-                        massa justo, cursus quis rhoncus vel, tempus sed lectus. Donec sed sodales felis. Maecenas
-                        porta,
-                        quam sed mollis.</p>
+                        leo accumsan suscipit in eu magna. Ut aliquam aliquet elit sit amet pretium. Vestibulum sit amet
+                        ante elementum, vehicula erat nec, dapibus odio. Suspendisse ultricies justo at congue aliquet.
+                        Aenean massa justo, cursus quis rhoncus vel, tempus sed lectus. Donec sed sodales felis. Maecenas
+                        porta, quam sed mollis.</p>
                     <div class="left-btn">
                         <button class="left-btn-one">
                             <img src="./images/sms.svg" alt="sms">
@@ -58,23 +67,23 @@
                     </div>
                 </div>
                 <div class="right">
-                    <img src="./images/charlie.jpg" alt="this photo is him">
+                    <img src="./images/charlie.jpg" alt="Charlie Rosser photo">
                 </div>
             </div>
         </section>
-        <section class="sec-two">
+
+        <section class="sec-two" id="experiences">
             <div class="special">
                 <h3>Some of my <span>experiences</span></h3>
-                <nav>
-                    <a class="nav-link" href="#"><img src="./images/nav1.svg" alt="navigation" </a>
-                        <a class="nav-link" href="#"><img src="./images/nav2.svg" alt="navigation">Imperial
-                            Healthtech</a>
-                        <a class="nav-link" href="#"><img src="./images/nav3.svg" alt="navigation"></a>
-                        <a class="nav-link" href="#"><img src="./images/nav4.svg" alt="navigation">Central computer
-                            Improvement</a>
+                <nav class="company-nav">
+                    <a class="nav-link" href="#"><img src="./images/nav1.svg" alt="navigation"></a>
+                    <a class="nav-link" href="#"><img src="./images/nav2.svg" alt="navigation">Imperial Healthtech</a>
+                    <a class="nav-link" href="#"><img src="./images/nav3.svg" alt="navigation"></a>
+                    <a class="nav-link" href="#"><img src="./images/nav4.svg" alt="navigation">Central computer Improvement</a>
                 </nav>
             </div>
         </section>
+
         <section class="sec-three">
             <h2>My <span class="span1">Detail</span> <span class="span2">Experiences</span></h2>
             <div class="wrapper">
@@ -144,77 +153,91 @@
                 </div>
             </div>
         </section>
-        <section class="sec-four">
+
+        <section class="sec-four" id="portfolio">
             <h3>Some of my <span class="span2">Portfolio</span></h3>
-            <img class="main-foto" src="./images/ish stoli.jpg" alt="workingtable">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna ex, interdum vel sagittis lacinia,
-                tempor vitae massa. Donec sed commodo urna. Duis id odio laoreet, maximus leo non, feugiat odio. Vivamus
-                id nulla id justo feugiat vehicula in nec purus. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Ut tincidunt odio sit amet pharetra semper. Nunc lacinia odio ac
-                gravida vehicula. Aenean ac pharetra urna. Pellentesque in consectetur diam. Donec sem nisi, rhoncus
-                vitae rhoncus vel, auctor nec lectus. Duis.</p>
-            <div class="icons">
-                <img src="./images/figma.svg" alt="figma">
-                <p>Visit Figma</p>
-                <img src="./images/ikkinchi.svg" alt="keyingi">
-                <p>Visit Behance</p>
-                <img src="./images/top.svg" alt="koptok">
-                <p>Visit Dribbble</p>
+            <div class="portfolio-item">
+                <img class="main-foto" src="./images/ish stoli.jpg" alt="workingtable">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna ex, interdum vel sagittis lacinia,
+                    tempor vitae massa. Donec sed commodo urna. Duis id odio laoreet, maximus leo non, feugiat odio. Vivamus
+                    id nulla id justo feugiat vehicula in nec purus. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos. Ut tincidunt odio sit amet pharetra semper. Nunc lacinia odio ac
+                    gravida vehicula. Aenean ac pharetra urna. Pellentesque in consectetur diam. Donec sem nisi, rhoncus
+                    vitae rhoncus vel, auctor nec lectus. Duis.</p>
+                <div class="icons">
+                    <img src="./images/figma.svg" alt="figma">
+                    <p>Visit Figma</p>
+                    <img src="./images/ikkinchi.svg" alt="keyingi">
+                    <p>Visit Behance</p>
+                    <img src="./images/top.svg" alt="koptok">
+                    <p>Visit Dribbble</p>
+                </div>
             </div>
-            <img class="main-foto" src="./images/kompyuter.jpg" alt="workingtable">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna ex, interdum vel sagittis lacinia,
-                tempor vitae massa. Donec sed commodo urna. Duis id odio laoreet, maximus leo non, feugiat odio. Vivamus
-                id nulla id justo feugiat vehicula in nec purus. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Ut tincidunt odio sit amet pharetra semper. Nunc lacinia odio ac
-                gravida vehicula. Aenean ac pharetra urna. Pellentesque in consectetur diam. Donec sem nisi, rhoncus
-                vitae rhoncus vel, auctor nec lectus. Duis.</p>
-            <div class="icons">
-                <img src="./images/figma.svg" alt="figma">
-                <p>Visit Figma</p>
-                <img src="./images/ikkinchi.svg" alt="keyingi">
-                <p>Visit Behance</p>
-                <img src="./images/top.svg" alt="koptok">
-                <p>Visit Dribbble</p>
+
+            <div class="portfolio-item">
+                <img class="main-foto" src="./images/kompyuter.jpg" alt="workingtable">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna ex, interdum vel sagittis lacinia,
+                    tempor vitae massa. Donec sed commodo urna. Duis id odio laoreet, maximus leo non, feugiat odio. Vivamus
+                    id nulla id justo feugiat vehicula in nec purus. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos. Ut tincidunt odio sit amet pharetra semper. Nunc lacinia odio ac
+                    gravida vehicula. Aenean ac pharetra urna. Pellentesque in consectetur diam. Donec sem nisi, rhoncus
+                    vitae rhoncus vel, auctor nec lectus. Duis.</p>
+                <div class="icons">
+                    <img src="./images/figma.svg" alt="figma">
+                    <p>Visit Figma</p>
+                    <img src="./images/ikkinchi.svg" alt="keyingi">
+                    <p>Visit Behance</p>
+                    <img src="./images/top.svg" alt="koptok">
+                    <p>Visit Dribbble</p>
+                </div>
             </div>
-            <img class="main-foto" src="./images/kompyuter2.jpg" alt="workingtable">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna ex, interdum vel sagittis lacinia,
-                tempor vitae massa. Donec sed commodo urna. Duis id odio laoreet, maximus leo non, feugiat odio. Vivamus
-                id nulla id justo feugiat vehicula in nec purus. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Ut tincidunt odio sit amet pharetra semper. Nunc lacinia odio ac
-                gravida vehicula. Aenean ac pharetra urna. Pellentesque in consectetur diam. Donec sem nisi, rhoncus
-                vitae rhoncus vel, auctor nec lectus. Duis.</p>
-            <div class="icons">
-                <img src="./images/figma.svg" alt="figma">
-                <p>Visit Figma</p>
-                <img src="./images/ikkinchi.svg" alt="keyingi">
-                <p>Visit Behance</p>
-                <img src="./images/top.svg" alt="koptok">
-                <p>Visit Dribbble</p>
+
+            <div class="portfolio-item">
+                <img class="main-foto" src="./images/kompyuter2.jpg" alt="workingtable">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna ex, interdum vel sagittis lacinia,
+                    tempor vitae massa. Donec sed commodo urna. Duis id odio laoreet, maximus leo non, feugiat odio. Vivamus
+                    id nulla id justo feugiat vehicula in nec purus. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos. Ut tincidunt odio sit amet pharetra semper. Nunc lacinia odio ac
+                    gravida vehicula. Aenean ac pharetra urna. Pellentesque in consectetur diam. Donec sem nisi, rhoncus
+                    vitae rhoncus vel, auctor nec lectus. Duis.</p>
+                <div class="icons">
+                    <img src="./images/figma.svg" alt="figma">
+                    <p>Visit Figma</p>
+                    <img src="./images/ikkinchi.svg" alt="keyingi">
+                    <p>Visit Behance</p>
+                    <img src="./images/top.svg" alt="koptok">
+                    <p>Visit Dribbble</p>
+                </div>
             </div>
-            <img class="main-foto" src="./images/kompyuter3.jpg" alt="workingtable">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna ex, interdum vel sagittis lacinia,
-                tempor vitae massa. Donec sed commodo urna. Duis id odio laoreet, maximus leo non, feugiat odio. Vivamus
-                id nulla id justo feugiat vehicula in nec purus. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Ut tincidunt odio sit amet pharetra semper. Nunc lacinia odio ac
-                gravida vehicula. Aenean ac pharetra urna. Pellentesque in consectetur diam. Donec sem nisi, rhoncus
-                vitae rhoncus vel, auctor nec lectus. Duis.</p>
-            <div class="icons">
-                <img src="./images/figma.svg" alt="figma">
-                <p>Visit Figma</p>
-                <img src="./images/ikkinchi.svg" alt="keyingi">
-                <p>Visit Behance</p>
-                <img src="./images/top.svg" alt="koptok">
-                <p>Visit Dribbble</p>
+
+            <div class="portfolio-item">
+                <img class="main-foto" src="./images/kompyuter3.jpg" alt="workingtable">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna ex, interdum vel sagittis lacinia,
+                    tempor vitae massa. Donec sed commodo urna. Duis id odio laoreet, maximus leo non, feugiat odio. Vivamus
+                    id nulla id justo feugiat vehicula in nec purus. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos. Ut tincidunt odio sit amet pharetra semper. Nunc lacinia odio ac
+                    gravida vehicula. Aenean ac pharetra urna. Pellentesque in consectetur diam. Donec sem nisi, rhoncus
+                    vitae rhoncus vel, auctor nec lectus. Duis.</p>
+                <div class="icons">
+                    <img src="./images/figma.svg" alt="figma">
+                    <p>Visit Figma</p>
+                    <img src="./images/ikkinchi.svg" alt="keyingi">
+                    <p>Visit Behance</p>
+                    <img src="./images/top.svg" alt="koptok">
+                    <p>Visit Dribbble</p>
+                </div>
             </div>
         </section>
-        <section class="sec-five">
+
+        <section class="sec-five" id="certificates">
             <h3>My <span class="span2">Certificates Experiences</span></h3>
             <div class="con">
-                <img src="./images/sertifikat.jpg" alt="sertificate">
-                <img src="./images/sertifikat2.jpg" alt="sertificate">
-                <img src="./images/sertifikat3.jpg" alt="sertificate">
+                <img src="./images/sertifikat.jpg" alt="certificate 1">
+                <img src="./images/sertifikat2.jpg" alt="certificate 2">
+                <img src="./images/sertifikat3.jpg" alt="certificate 3">
             </div>
         </section>
+
         <section class="sec-six">
             <h2>Interested <span class="span2">knowing more</span> about me?</h2>
             <div class="btn">
@@ -228,12 +251,34 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer qismi -->
     <footer>
         <div class="last">
             <h5>CharlieRosser - Get in touch</h5>
-            <p>For business inquiry please send email to <a href="#">CharlieRosser@gmail.com</a></p>
+            <p>For business inquiry please send email to <a href="mailto:CharlieRosser@gmail.com">CharlieRosser@gmail.com</a></p>
         </div>
     </footer>
+
+    <script>
+        // Dark/Light rejimini xotirada (localStorage) saqlash
+        const darkToggle = document.getElementById('dark');
+        if (localStorage.getItem('theme') === 'light') {
+            darkToggle.checked = true;
+        }
+        darkToggle.addEventListener('change', () => {
+            localStorage.setItem('theme', darkToggle.checked ? 'light' : 'dark');
+        });
+
+        // Mobil menyu havolalari bosilganda menyuni avtomatik yopish
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle) menuToggle.checked = false;
+            });
+        });
+    </script>
 </body>
 
 </html>
